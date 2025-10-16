@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Investigación 3: Accesibilidad Web</title>
+</head>
+<body>
+    <header role="banner">
+        <nav>
+            <h1>Investigación sobre Accesibilidad Web</h1>
+            <ul>
+                <li><a href="#inicio" tabindex="1">Inicio</a></li>
+                <li><a href="#que-es" tabindex="2">¿Qué es la Accesibilidad?</a></li>
+                <li><a href="#importancia" tabindex="3">Importancia</a></li>
+                <li><a href="#wcag" tabindex="4">Principios WCAG</a></li>
+                <li><a href="#implementacion" tabindex="5">Implementación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- INICIO -->
+        <section id="inicio" class="investigacion-inicio">
+            <h1>Investigación 3: Accesibilidad Web</h1>
+            <div class="informacion-general">
+                <i>Comprender la accesibilidad web y cómo aplicarla siguiendo las WCAG para mejorar la experiencia de todos los usuarios.</i>
+            </div>
+            <div class="imagen-principal">
+                <img src="images/accesibilidad-portada.png" alt="Ilustración de accesibilidad web para todos los usuarios">
+            </div>
+        </section>
+
+        <!-- ¿QUÉ ES ACCESIBILIDAD? -->
+        <section id="que-es" class="investigacion que-es" role="region" aria-labelledby="titulo-que-es">
+            <h2 id="titulo-que-es">¿Qué es la Accesibilidad Web?</h2>
+            <p>La <strong>accesibilidad web</strong> es el diseño y desarrollo de sitios web de manera que todas las personas, incluidas aquellas con discapacidades, puedan percibir, comprender, navegar e interactuar con la web de forma efectiva.</p>
+        </section>
+
+        <!-- IMPORTANCIA -->
+        <section id="importancia" class="investigacion importancia" role="region" aria-labelledby="titulo-importancia">
+            <h2 id="titulo-importancia">Importancia de la Accesibilidad</h2>
+            <p>Implementar accesibilidad es importante desde varias perspectivas:</p>
+            <ul>
+                <li><strong>Ética:</strong> Garantiza que todos los usuarios tengan igualdad de acceso a la información.</li>
+                <li><strong>Legal:</strong> Cumplir con leyes y normativas de accesibilidad evita sanciones.</li>
+                <li><strong>Calidad del código:</strong> Mejora la estructura semántica y el mantenimiento del sitio, beneficiando tanto a usuarios como a motores de búsqueda.</li>
+            </ul>
+        </section>
+
+        <!-- PRINCIPIOS WCAG -->
+        <section id="wcag" class="investigacion wcag" role="region" aria-labelledby="titulo-wcag">
+            <h2 id="titulo-wcag">Principios de las WCAG</h2>
+            <p>Las WCAG se basan en cuatro principios fundamentales: Perceptible, Operable, Comprensible y Robusto (POCR). Aplicando estos principios se logra que los sitios sean accesibles para todos los usuarios.</p>
+
+            <article class="principio" role="article">
+                <h3>1. Perceptible</h3>
+                <p>El contenido debe ser presentado de manera que los usuarios puedan percibirlo, independientemente de sus capacidades sensoriales.</p>
+            </article>
+
+            <article class="principio" role="article">
+                <h3>2. Operable</h3>
+                <p>Los usuarios deben poder interactuar con la interfaz de manera flexible, incluyendo el uso de teclado o dispositivos de asistencia.</p>
+            </article>
+
+            <article class="principio" role="article">
+                <h3>3. Comprensible</h3>
+                <p>El contenido y la navegación deben ser claros y fáciles de entender, evitando confusión o ambigüedad.</p>
+            </article>
+
+            <article class="principio" role="article">
+                <h3>4. Robusto</h3>
+                <p>El contenido debe ser compatible con diferentes navegadores, dispositivos y tecnologías asistivas, asegurando su correcta interpretación.</p>
+            </article>
+        </section>
+
+        <!-- IMPLEMENTACIÓN -->
+        <section id="implementacion" class="investigacion implementacion" role="region" aria-labelledby="titulo-implementacion">
+            <h2 id="titulo-implementacion">Implementación en esta Página</h2>
+            <p>Esta página misma implementa los principios de accesibilidad:</p>
+            <ul>
+                <li><strong>Navegación con teclado:</strong> Todos los enlaces del menú y elementos interactivos son seleccionables con <code>Tab</code> y activables con <code>Enter</code>.</li>
+                <li><strong>HTML semántico:</strong> Se utilizó <code>header</code>, <code>main</code>, <code>section</code>, <code>article</code> y <code>footer</code> para organizar el contenido de manera clara y coherente.</li>
+                <li><strong>WAI-ARIA:</strong> Se añadieron atributos como <code>role</code> y <code>aria-labelledby</code> para mejorar la accesibilidad y compatibilidad con lectores de pantalla.</li>
+            </ul>
+            <p>De esta manera, la página cumple de forma práctica y real con las funciones requeridas de accesibilidad web.</p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 César Valenciano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -45,8 +45,6 @@ header {
 }
 
 
-
-
 header h1 {
     font-family: 'Georgia', serif;
     font-size: 2.2em;
@@ -159,6 +157,113 @@ footer {
     margin-bottom: 15px;
 }
 
+
+/*indice sobre los 10 principios de Nielsen*/
+
+.indice {
+    position: fixed;
+    top: 200px; /* para que no se meta arriba */
+    bottom: 100px; /* para que no se meta abajo */
+    right: 20px;
+    width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-height: calc(90vh - 170px);             /* Evita que toque header o footer */
+    overflow-y: auto;                            /* Scroll interno si hay muchos enlaces */
+    z-index: 1000;                               /* Encima del contenido, sin interferir */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+.indice h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.indice p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.indice ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.indice li {
+    margin-bottom: 8px;
+}
+
+.indice a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.indice a:hover {
+    color: #fe2a1f;
+}
+
+/* Contenedor comparativo para cada principio */
+.comparacion-practicas {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+/* Bloques individuales: buena y mala práctica */
+.comparacion-practicas .buena,
+.comparacion-practicas .mala {
+  flex: 1;
+  min-width: 280px;
+  background-color: #f0f4f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Imágenes dentro de cada bloque */
+.comparacion-practicas img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Etiquetas descriptivas */
+.etiqueta {
+  font-weight: bold;
+  font-size: 0.95em;
+  color: #1254a0;
+}
+
+/* Títulos de cada principio */
+section.principios h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #1254a0;
+  border-bottom: 1px solid #cce0f5;
+  padding-bottom: 5px;
+}
+
+/* Párrafos explicativos */
+section.principios p {
+  margin-bottom: 15px;
+}
+
+
+
+
 /* Media querie - Adaptación responsive para móvil */
 @media (max-width: 768px) {
     main {
@@ -179,3 +284,13 @@ footer {
         padding: 20px 15px;
     }
 }
+/*  Ocultar el índice cuando la pantalla es pequeña (por ejemplo, en móvil o ventana estrecha) */
+@media (max-width: 1100px) {
+    .indice {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
