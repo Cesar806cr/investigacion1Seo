@@ -232,7 +232,7 @@ footer {
 /* Controla el tamaño de la imagen */
 .comparacion-practicas img {
   max-height: 200px;       /* Ajusta según tu diseño */
-  width: auto;
+  width: 400px;
   object-fit: contain;
   margin-bottom: 10px;
 }
