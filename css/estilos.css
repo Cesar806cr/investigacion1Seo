@@ -213,45 +213,50 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 20px 0;
-  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-/* Bloques individuales: buena y mala práctica */
 .comparacion-practicas .buena,
 .comparacion-practicas .mala {
   flex: 1;
-  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #f0f4f8;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Imágenes dentro de cada bloque */
+/* Controla el tamaño de la imagen */
 .comparacion-practicas img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+  max-height: 200px;       /* Ajusta según tu diseño */
+  width: auto;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
-/* Etiquetas descriptivas */
+/* Etiqueta con altura fija */
 .etiqueta {
+  height: 60px;
   font-weight: bold;
-  font-size: 0.95em;
+  font-size: 0.75em;
   color: #1254a0;
+  padding: 10px;
+  
 }
+
+
+
+
 
 /* Títulos de cada principio */
 section.principios h3 {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 1.3em;
-  color: #1254a0;
+  color: black;
   border-bottom: 1px solid #cce0f5;
   padding-bottom: 5px;
 }
