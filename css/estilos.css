@@ -16,6 +16,7 @@ body {
     line-height: 1.8;
 }
 
+
 /* Enlaces */
 a {
     color: #1254a0;
@@ -73,6 +74,11 @@ nav ul {
     padding: 0;              /* quita el padding por defecto */
     margin: 0;                /* quita el margen por defecto */
 }
+
+ul{
+    list-style: none;
+}
+
 
 
 /* Secciones */
@@ -155,6 +161,7 @@ footer {
     padding: 12px 15px;
     border-left: 4px solid #1254a0;
     margin-bottom: 15px;
+    
 }
 
 
@@ -269,12 +276,13 @@ section.principios p {
 
 
 
-/* Media querie - Adaptación responsive para móvil */
+/* Media queries - Adaptación responsive para móvil */
 @media (max-width: 768px) {
     main {
         padding: 0 15px;
         margin: 20px auto;
     }
+
 
     header h1 {
         font-size: 1.8em;
@@ -289,6 +297,22 @@ section.principios p {
         padding: 20px 15px;
     }
 }
+
+
+/* Estilos base (escritorio por defecto) */
+main {
+    padding: 0 40px;
+    margin: 40px auto;
+}
+
+/* Tablets: entre 769px y 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        padding: 0 30px;
+        margin: 30px auto;
+    }
+}
+
 /*  Ocultar el índice cuando la pantalla es pequeña (por ejemplo, en móvil o ventana estrecha) */
 @media (max-width: 1100px) {
     .indice {
