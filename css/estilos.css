@@ -2,7 +2,7 @@
    ESTILOS GENERALES 
    ============================== */
 
-/* Reset básico */
+/*  básico */
 * {
     margin: 0;
     padding: 0;
@@ -162,6 +162,18 @@ footer {
     border-left: 4px solid #1254a0;
     margin-bottom: 15px;
     
+}
+.linea-codigo-alt {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 4px solid #1254a0;
+    margin: 15px 0;
+    font-size: 0.9em;
+}
+
+.principio h3{
+    color: black;
 }
 
 

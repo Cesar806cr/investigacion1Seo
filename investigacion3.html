@@ -28,24 +28,32 @@
                 <i>Comprender la accesibilidad web y cómo aplicarla siguiendo las WCAG para mejorar la experiencia de todos los usuarios.</i>
             </div>
             <div class="imagen-principal">
-                <img src="images/accesibilidad-portada.png" alt="Ilustración de accesibilidad web para todos los usuarios">
+                <img src="images/web-accessibility-1.png" alt="Ilustración de accesibilidad web para todos los usuarios">
+                <ul>
+                    <li><strong>Fuente de la imagen:</strong> <a href="https://www.hostinger.com/es/tutoriales/accesibilidad-web">Hostinger</a></li>
+                </ul>
             </div>
         </section>
 
         <!-- ¿QUÉ ES ACCESIBILIDAD? -->
         <section id="que-es" class="investigacion que-es" role="region" aria-labelledby="titulo-que-es">
             <h2 id="titulo-que-es">¿Qué es la Accesibilidad Web?</h2>
-            <p>La <strong>accesibilidad web</strong> es el diseño y desarrollo de sitios web de manera que todas las personas, incluidas aquellas con discapacidades, puedan percibir, comprender, navegar e interactuar con la web de forma efectiva.</p>
+            <p>La <strong>accesibilidad web</strong> busca garantizar que todas las personas, incluidas aquellas con alguna discapacidad, puedan usar y entender un sitio web y su contenido. Para lograrlo, el sitio debe cumplir con los principios POUR (Perceptible, Operable, Comprensible y Robusto) establecidos por las WCAG. Esto se alcanza aplicando un diseño inclusivo, por ejemplo, añadiendo texto alternativo a las imágenes, subtítulos a los videos y una correcta jerarquía de encabezados.</p>
         </section>
 
         <!-- IMPORTANCIA -->
         <section id="importancia" class="investigacion importancia" role="region" aria-labelledby="titulo-importancia">
             <h2 id="titulo-importancia">Importancia de la Accesibilidad</h2>
-            <p>Implementar accesibilidad es importante desde varias perspectivas:</p>
+            <p><i><strong>Implementar accesibilidad es importante desde varias perspectivas:</strong></i></p>
+            <br>
             <ul>
-                <li><strong>Ética:</strong> Garantiza que todos los usuarios tengan igualdad de acceso a la información.</li>
-                <li><strong>Legal:</strong> Cumplir con leyes y normativas de accesibilidad evita sanciones.</li>
-                <li><strong>Calidad del código:</strong> Mejora la estructura semántica y el mantenimiento del sitio, beneficiando tanto a usuarios como a motores de búsqueda.</li>
+                <li><strong>Ética:</strong> Diseñar un sitio web accesible implica promover la equidad y la igualdad digital. Reconocer que todos tienen derecho a acceder a la información y a los servicios en línea contribuye a eliminar las barreras que enfrentan las personas con discapacidad.</li>
+                <br>
+                <li><strong>Legal:</strong> La accesibilidad web constituye una obligación legal en numerosos países. Por ejemplo, la Ley de Estadounidenses con Discapacidades <strong>(ADA)</strong> establece que los sitios web deben ser fácilmente utilizables por todas las personas, incluidas aquellas con alguna discapacidad.</li>
+                <br>
+                <li><strong>Calidad del código:</strong> Los sitios web accesibles que presentan una buena estructura de contenido, una navegación clara y texto alternativo en las imágenes suelen obtener una mejor posición en los resultados de los motores de búsqueda.</li>
+                <br>
+                <li><i><strong>Referencia del texto:</strong></i> <a href="https://www.hostinger.com/es/tutoriales/accesibilidad-web">Hostinger</a></li>
             </ul>
         </section>
 
@@ -56,22 +64,47 @@
 
             <article class="principio" role="article">
                 <h3>1. Perceptible</h3>
-                <p>El contenido debe ser presentado de manera que los usuarios puedan percibirlo, independientemente de sus capacidades sensoriales.</p>
+                <p>Este concepto destaca la importancia de que el contenido web pueda ser percibido por la mayoría de los usuarios. Para ello, se ofrecen alternativas auditivas a los elementos visuales, como el uso de texto alternativo en las imágenes,comprensible por lectores de pantalla que asisten a personas con discapacidad visual.</p>
+                
+                <img src="images/lector-de-pantalla.jpg" alt="Representa el principio de 'Perceptible' en accesibilidad web"> 
+                <ul>
+                    <li><strong>Fuente de la imagen:</strong> <a href="https://www.psafe.com/es/blog/lectores-pantallas-para-deficientes-visuales/">PSafe</a></li>
+                </ul>
+                <h3>Lector de Pantalla</h3>
+                <i>Pensadas para personas con discapacidad visual, estas herramientas convierten la información mostrada en pantalla en audio, facilitando así la navegación y comprensión del contenido. </i></p>
+                
+                <div class="linea-codigo-alt">
+                    <blockquote>
+                     <code>&lt;img src="imagen.jpg" alt="Una descripción clara de la imagen"&gt;</code>
+                     <p>Si un usuario no puede ver la imagen, el lector de pantalla leerá el texto alternativo (alt), asegurando que no se pierda la información visual.</p>
+                    </blockquote>
+                    
+                </div>
             </article>
+
 
             <article class="principio" role="article">
                 <h3>2. Operable</h3>
                 <p>Los usuarios deben poder interactuar con la interfaz de manera flexible, incluyendo el uso de teclado o dispositivos de asistencia.</p>
+                <img src="images/Teclado_Braille.jpg.jpeg" alt="Representa el principio de 'Operable' en accesibilidad web">
+                <ul>
+                    <li><strong>Fuente de la imagen:</strong> <a href="https://www.ilunion.com/es/blog-puntoilunion/wcag-accesibilidad">ILUNION</a></li>
+                </ul>
             </article>
 
             <article class="principio" role="article">
                 <h3>3. Comprensible</h3>
-                <p>El contenido y la navegación deben ser claros y fáciles de entender, evitando confusión o ambigüedad.</p>
+                <p>Este aspecto resulta esencial para cualquier usuario, ya que refleja la importancia de que el texto sea comprensible y fácil de leer. En términos generales, los contenidos deben presentarse con una organización y un formato que sean intuitivos para las personas que comparten una misma lengua y contexto cultural.</p>
+                <img src="images/comprensible.PNG" alt="Representa el principio de 'Comprensible' en accesibilidad web">
+               <p><i>Wikipedia-captura de pantalla de wikipedia mostrando un artículo con un diseño claro y organizado, facilitando la lectura y comprensión del contenido </i>.</p>
+                </blockquote>
             </article>
 
             <article class="principio" role="article">
                 <h3>4. Robusto</h3>
-                <p>El contenido debe ser compatible con diferentes navegadores, dispositivos y tecnologías asistivas, asegurando su correcta interpretación.</p>
+                <p>Este principio señala que los productos digitales deben operar correctamente en diversos dispositivos y navegadores, además de ser compatibles con las tecnologías de asistencia utilizadas por los usuarios.</p>
+                <img src="images/robusto.PNG" alt="Representa el principio de 'Robusto' en accesibilidad web">
+                <p><i>Etsy-captura de pantalla de <strong>etsy.com</strong> un sitio web que se adapta correctamente a diferentes navegadores y dispositivos, asegurando una experiencia consistente para todos los usuarios.</i></p>
             </article>
         </section>
 
@@ -85,6 +118,16 @@
                 <li><strong>WAI-ARIA:</strong> Se añadieron atributos como <code>role</code> y <code>aria-labelledby</code> para mejorar la accesibilidad y compatibilidad con lectores de pantalla.</li>
             </ul>
             <p>De esta manera, la página cumple de forma práctica y real con las funciones requeridas de accesibilidad web.</p>
+        </section>
+
+         <!-- REFERENCIAS -->
+        <section id="referencias" class="investigacion-referencias">
+           <h2>Referencias</h2>
+            <ul2>
+                <li>Ejemplos de Buenas Prácticas de Accesibilidad web - <a href="https://www.hostinger.com/es/tutoriales/accesibilidad-web">Hostinger</a></li>
+                <li>¿Qué es la Accesibilidad Web? - <a href="https://blog.hubspot.es/website/que-es-accesibilidad-web">HubSpot</a></li>
+                <li>Diseño Inclusivo - <a href="https://www.ilunion.com/es/blog-puntoilunion/wcag-accesibilidad">ILUNION</a></li>
+            </ul2>
         </section>
     </main>
 
